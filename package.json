@@ -3,9 +3,11 @@
   "description": "use live video to grow your audience",
   "version": "0.0.1",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "webpack": "^2.2.1"
+  },
   "scripts": {
-    "wp": "webpack --progress"
+    "wp": "rm -rf public/ && webpack --progress"
   },
   "author": "Dylan Jhaveri <dylanjhaveri@gmail.com>"
 }
