@@ -1,5 +1,5 @@
 const path = require('path')
-
+const BundleSummary = require('webpack-bundle-summary')
 const shouldHash = false
 
 var getFilename = function (extension) {
@@ -23,8 +23,10 @@ var config = {
   resolve: {
     alias: {}
   },
+  plugins: [
+    new BundleSummary()
+  ],
   devtool: 'source-map'
 }
 
 module.exports = config
-

@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "webpack-bundle-summary": "^0.0.1"
   },
   "scripts": {
     "wp": "rm -rf public/ && webpack --progress"
