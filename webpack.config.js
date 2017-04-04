@@ -24,7 +24,9 @@ var config = {
     alias: {}
   },
   plugins: [
-    new BundleSummary()
+    new BundleSummary({
+      filter: (assetName) => /\.js$/.test(assetName)
+    })
   ],
   devtool: 'source-map'
 }

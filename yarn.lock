@@ -1658,9 +1658,9 @@ watchpack@^1.2.0:
     chokidar "^1.4.3"
     graceful-fs "^4.1.2"
 
-webpack-bundle-summary@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/webpack-bundle-summary/-/webpack-bundle-summary-0.0.1.tgz#11fd213b4cfe300e1fa84084c0d26886e1d41e40"
+webpack-bundle-summary@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/webpack-bundle-summary/-/webpack-bundle-summary-0.2.0.tgz#4c36c1a508a8ed36d09e707562efd50042258126"
 
 webpack-sources@^0.1.4:
   version "0.1.4"
