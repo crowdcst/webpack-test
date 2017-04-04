@@ -4,6 +4,8 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "video.js": "^5.19.1",
+    "videojs-contrib-hls": "^5.4.0",
     "webpack": "^2.2.1",
     "webpack-bundle-summary": "0.3.0"
   },
