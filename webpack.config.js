@@ -1,5 +1,5 @@
 const path = require('path')
-const BundleSummary = require('webpack-bundle-summary')
+const BundleSummary = require('../webpack-bundle-summary/lib/index.js')
 const shouldHash = false
 
 var getFilename = function (extension) {
@@ -24,9 +24,7 @@ var config = {
     alias: {}
   },
   plugins: [
-    new BundleSummary({
-      filter: (assetName) => /\.js$/.test(assetName)
-    })
+    new BundleSummary()
   ],
   devtool: 'source-map'
 }
