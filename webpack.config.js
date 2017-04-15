@@ -25,7 +25,7 @@ var config = {
     alias: {}
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin({children: true, async: true, filename: 'async-commons.js'}),
+    new webpack.optimize.CommonsChunkPlugin({children: true, async: true}),
     new BundleSummary()
   ],
   devtool: 'source-map'
