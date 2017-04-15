@@ -5,10 +5,12 @@
   "private": true,
   "dependencies": {
     "webpack": "^2.2.1",
-    "webpack-bundle-summary": "0.3.0"
+    "webpack-bundle-summary": "0.3.0",
+    "webpack-dev-server": "^2.4.2"
   },
   "scripts": {
-    "wp": "rm -rf public/ && webpack --progress"
+    "wp": "rm -rf public/ && webpack --progress",
+    "start": "webpack-dev-server"
   },
   "author": "Dylan Jhaveri <dylanjhaveri@gmail.com>"
 }
