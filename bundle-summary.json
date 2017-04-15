@@ -1,6 +1,6 @@
 {
-  "$total": 317535,
-  "0.js": 220,
+  "$total": 317503,
   "1.js": 135,
-  "main.js": 317180
+  "async-commons.js": 147,
+  "main.js": 317221
 }

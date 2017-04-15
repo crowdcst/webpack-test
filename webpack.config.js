@@ -1,6 +1,7 @@
 const path = require('path')
 const BundleSummary = require('../webpack-bundle-summary/lib/index.js')
 const shouldHash = false
+const webpack = require('webpack')
 
 var getFilename = function (extension) {
   if (shouldHash) {
@@ -24,6 +25,7 @@ var config = {
     alias: {}
   },
   plugins: [
+    new webpack.optimize.CommonsChunkPlugin({children: true, async: true, filename: 'async-commons.js'}),
     new BundleSummary()
   ],
   devtool: 'source-map'
