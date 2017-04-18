@@ -1,6 +1,11 @@
 const path = require('path')
-const BundleSummary = require('../webpack-bundle-summary/lib/index.js')
+const BundleSummary = require('webpack-bundle-summary')
 const shouldHash = false
+const shouldAnalyze = process.env.ANALYZE === 'true'
+let BundleAnalyzerPlugin
+if (shouldAnalyze) {
+  BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+}
 const webpack = require('webpack')
 
 var getFilename = function (extension) {
@@ -29,6 +34,10 @@ var config = {
     new BundleSummary()
   ],
   devtool: 'source-map'
+}
+
+if (shouldAnalyze) {
+  config.plugins.push(new BundleAnalyzerPlugin())
 }
 
 module.exports = config

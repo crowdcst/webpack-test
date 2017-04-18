@@ -11,6 +11,7 @@
   },
   "scripts": {
     "wp": "rm -rf public/ && webpack --progress",
+    "wp-analyze": "rm -rf public/ && ANALYZE=true webpack --progress",
     "start": "webpack-dev-server"
   },
   "author": "Dylan Jhaveri <dylanjhaveri@gmail.com>"
